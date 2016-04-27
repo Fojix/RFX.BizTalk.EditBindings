@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="NoBindings" BoundEndpoints="0" TotalEndpoints="0">
+  <Timestamp>2016-04-27T19:40:14.9798601+02:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:VTech.EU.BizTalk.Walvis]" Version="" Culture="" PublicKeyToken="" FullName="[Application:VTech.EU.BizTalk.Walvis], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.EdiSoConfirmationFF" RootName="WalvisSOConfirmation" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.EdiSoConfirmationFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId_EDIDelivery" RootName="RecipientIds" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId_EDIDelivery,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.EmailAttachmentCSV" RootName="EmailAttachment" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.EmailAttachmentCSV,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.SalesOrderCounts" RootName="SalesOrderCounts" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.SalesOrderCounts,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.InvoiceFF" RootName="Invoices" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.InvoiceFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.SalesOrderFF" RootName="SalesOrderFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.SalesOrderFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.EDIDeliveryNotifyFF" RootName="Order" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.EDIDeliveryNotifyFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId" RootName="RecipientIds" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Schemas" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Pipelines" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Maps" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Orchestrations" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Orchestrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.HandleInvoices" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.HandleSalesOrder" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody OrchestrationEvents TrackPropertiesForIncomingMessages TrackPropertiesForOutgoingMessages" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication_64bit" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.EDIDeliveryNotification" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+</BindingInfo>

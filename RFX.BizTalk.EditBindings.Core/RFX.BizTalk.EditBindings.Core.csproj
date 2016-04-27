@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>2e232ba9-ca01-4945-a9d6-5f042d9c0aa2</ProjectGuid>
+    <ProjectGuid>{2E232BA9-CA01-4945-A9D6-5F042D9C0AA2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RFX.BizTalk.EditBindings.Core</RootNamespace>
@@ -30,25 +30,39 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System"/>
-    
-    <Reference Include="System.Core"/>
-    <Reference Include="System.Xml.Linq"/>
-    <Reference Include="System.Data.DataSetExtensions"/>
-    
-    
-    <Reference Include="Microsoft.CSharp"/>
-    
-    <Reference Include="System.Data"/>
-    
-    <Reference Include="System.Net.Http"/>
-    
-    <Reference Include="System.Xml"/>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="BindingFile.cs" />
+    <Compile Include="BindingInfo.cs" />
+    <Compile Include="CertificateInfo.cs" />
+    <Compile Include="ModuleRefCollection\DistributionListRef.cs" />
+    <Compile Include="ModuleRefCollection\EnlistedParty.cs" />
+    <Compile Include="ModuleRefCollection\HostRef.cs" />
+    <Compile Include="ModuleRefCollection\EnlistedPartyMapping.cs" />
+    <Compile Include="ModuleRefCollection\ModuleRef.cs" />
+    <Compile Include="ModuleRefCollection\Schema.cs" />
+    <Compile Include="ModuleRefCollection\ServicePortRef.cs" />
+    <Compile Include="PipelineRef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ModuleRefCollection\ReceivePortRef.cs" />
+    <Compile Include="ModuleRefCollection\RoleRef.cs" />
+    <Compile Include="ModuleRefCollection\SendPortRef.cs" />
+    <Compile Include="ModuleRefCollection\Service.cs" />
+    <Compile Include="ProtocolType.cs" />
+    <Compile Include="SendHandlerRef.cs" />
+    <Compile Include="SendPort.cs" />
+    <Compile Include="Transform.cs" />
+    <Compile Include="TransportInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
@@ -57,5 +71,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>

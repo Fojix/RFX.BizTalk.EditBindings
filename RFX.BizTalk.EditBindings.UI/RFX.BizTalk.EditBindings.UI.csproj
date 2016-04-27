@@ -95,6 +95,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RFX.BizTalk.EditBindings.Core\RFX.BizTalk.EditBindings.Core.csproj">
+      <Project>{2e232ba9-ca01-4945-a9d6-5f042d9c0aa2}</Project>
+      <Name>RFX.BizTalk.EditBindings.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

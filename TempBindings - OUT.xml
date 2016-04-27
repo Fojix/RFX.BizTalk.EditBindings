@@ -1,0 +1,447 @@
+<?xml version="1.0"?>
+<BindingInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Assembly="Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Version="3.5.1.0" BindingStatus="NoBindings" BoundEndpoints="0" TotalEndpoints="0">
+  <Timestamp>2016-04-27T19:40:14.9798601+02:00</Timestamp>
+  <ModuleRefCollection>
+    <ModuleRef Name="[Application:VTech.EU.BizTalk.Walvis]" Version="" Culture="" PublicKeyToken="" FullName="[Application:VTech.EU.BizTalk.Walvis], Version=, Culture=, PublicKeyToken=">
+      <Services />
+      <TrackedSchemas>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.EdiSoConfirmationFF" RootName="WalvisSOConfirmation" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.EdiSoConfirmationFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId_EDIDelivery" RootName="RecipientIds" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId_EDIDelivery,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.EmailAttachmentCSV" RootName="EmailAttachment" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.EmailAttachmentCSV,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.SalesOrderCounts" RootName="SalesOrderCounts" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.SalesOrderCounts,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.InvoiceFF" RootName="Invoices" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.InvoiceFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.SalesOrderFF" RootName="SalesOrderFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.SalesOrderFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.EDIDeliveryNotifyFF" RootName="Order" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.EDIDeliveryNotifyFF,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+        <Schema FullName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId" RootName="RecipientIds" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Schemas.Orchestration.RecipientId,VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" AlwaysTrackAllProperties="false" Description="">
+          <TrackedPropertyNames />
+        </Schema>
+      </TrackedSchemas>
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Schemas" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Schemas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Pipelines" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Maps" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services />
+      <TrackedSchemas />
+    </ModuleRef>
+    <ModuleRef Name="VTech.EU.BizTalk.Walvis.Orchestrations" Version="1.0.0.0" Culture="neutral" PublicKeyToken="ac0d36bf7910deff" FullName="VTech.EU.BizTalk.Walvis.Orchestrations, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff">
+      <Services>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.HandleInvoices" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.HandleSalesOrder" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive InboundMessageBody OutboundMessageBody OrchestrationEvents TrackPropertiesForIncomingMessages TrackPropertiesForOutgoingMessages" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication_64bit" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+        <Service Name="VTech.EU.BizTalk.Walvis.Orchestrations.EDIDeliveryNotification" State="Started" TrackingOption="ServiceStartEnd MessageSendReceive OrchestrationEvents" Description="">
+          <Ports />
+          <Roles />
+          <Host Name="BizTalkServerApplication" NTGroupName="BizTalk Application Users" Type="1" Trusted="false" />
+        </Service>
+      </Services>
+      <TrackedSchemas />
+    </ModuleRef>
+  </ModuleRefCollection>
+  <SendPortCollection>
+    <SendPort Name="VTech.EU.BizTalk.Walvis.Orchestrations_1.0.0.0_VTech.EU.BizTalk.Walvis.Orchestrations.EDIDeliveryNotification_Prt_SndEmailNotification_ac0d36bf7910deff" IsStatic="false" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="Microsoft.BizTalk.DefaultPipelines.XMLTransmit" FullyQualifiedName="Microsoft.BizTalk.DefaultPipelines.XMLTransmit, Microsoft.BizTalk.DefaultPipelines, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Type="2" TrackingOption="None" Description="" />
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter />
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.07.EDI_SalesOrder.Error" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.EU.BizTalk.Walvis.Pipelines.SendSalesOrderFlatFile" FullyQualifiedName="VTech.EU.BizTalk.Walvis.Pipelines.SendSalesOrderFlatFile, VTech.EU.BizTalk.Walvis.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\ERROR\07 EDI Sales Order\Error_%MessageID%.edi</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;Error_%MessageID%.edi&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>204</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="Op_SendError_SalesOrderFF" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms />
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.09.Invoice.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\OUT\09 Invoice\%SourceFileName%.fac</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%SourceFileName%.fac&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>204</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="EdiInvoiceDebatched" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_InvoiceFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_InvoiceFF,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.09.Invoice.Archive.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\Archive\OUT\09 Invoice\%SourceFileName%.fac</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%SourceFileName%.fac&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T22:00:00</FromTime>
+        <ToTime>2000-01-01T21:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>204</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="EdiInvoiceDebatched" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_InvoiceFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_InvoiceFF,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.10.DeliveryNotification.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <SendPipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4101-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.DiscardMessage.DiscardMessageComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4107-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.FFAsmComp"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4108-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.ConvertEncoding.ConvertEncodingComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.SetFilenameMacro.SetFilenameMacroComponent"&gt;&lt;Properties&gt;&lt;DateTimeFormat vt="8"&gt;yyyyMMdd_HHmmss&lt;/DateTimeFormat&gt;&lt;SetMacroWithDate vt="11"&gt;-1&lt;/SetMacroWithDate&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</SendPipelineData>
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\OUT\10 EDI Delivery Notification\%SourceFileName%.dln</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%SourceFileName%.dln&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="VTech.MetaData.Source" Operator="0" Value="ERP" /&gt;
+        &lt;Statement Property="VTech.MetaData.BtsOperation" Operator="0" Value="EDIDeliveryNotify" /&gt;
+        &lt;Statement Property="VTech.MetaData.Target" Operator="0" Value="Walvis" /&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="ReceivedFromEBS" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.SO_CDM_x_EDIDeliveryNotifyFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.SO_CDM_x_EDIDeliveryNotifyFF,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.10.DeliveryNotification.Archive.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <SendPipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4101-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.DiscardMessage.DiscardMessageComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4107-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.FFAsmComp"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4108-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.ConvertEncoding.ConvertEncodingComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.SetFilenameMacro.SetFilenameMacroComponent"&gt;&lt;Properties&gt;&lt;DateTimeFormat vt="8"&gt;yyyyMMdd_HHmmss&lt;/DateTimeFormat&gt;&lt;SetMacroWithDate vt="11"&gt;-1&lt;/SetMacroWithDate&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</SendPipelineData>
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\Archive\OUT\10 EDI Delivery Notification\%SourceFileName%.dln</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%SourceFileName%.dln&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>0</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="VTech.MetaData.Source" Operator="0" Value="ERP" /&gt;
+        &lt;Statement Property="VTech.MetaData.BtsOperation" Operator="0" Value="EDIDeliveryNotify" /&gt;
+        &lt;Statement Property="VTech.MetaData.Target" Operator="0" Value="Walvis" /&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="ReceivedFromEBS" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.SO_CDM_x_EDIDeliveryNotifyFF" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.SO_CDM_x_EDIDeliveryNotifyFF,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.08.SO_Confirmation.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <SendPipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4101-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.DiscardMessage.DiscardMessageComponent"&gt;&lt;Properties&gt;&lt;DiscardMessage vt="11"&gt;-1&lt;/DiscardMessage&gt;&lt;XPathToCheck vt="8"&gt;//*[local-name()='WalvisSOConfirmations']&lt;/XPathToCheck&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4107-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.FFAsmComp"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4108-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.ConvertEncoding.ConvertEncodingComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.SetFilenameMacro.SetFilenameMacroComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</SendPipelineData>
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\OUT\08 SO Confirmation\%MessageID%.sor</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%MessageID%.sor&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://schemas.vtech.com/biztalk/CDM/Invoice/201506#InvoiceData" /&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="ReceivedFromEBS" /&gt;
+        &lt;Statement Property="VTech.MetaData.SubMessageType" Operator="0" Value="SalesOrderConfirmation" /&gt;
+        &lt;Statement Property="VTech.MetaData.Source" Operator="0" Value="ERP" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_EdiSoConfirmation" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_EdiSoConfirmation,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+    <SendPort Name="Walvis.SP.08.SO_Confirmation.Archive.FILE" IsStatic="true" IsTwoWay="false" BindingOption="0">
+      <Description xsi:nil="true" />
+      <TransmitPipeline Name="VTech.Pipelines.FlatFileSend" FullyQualifiedName="VTech.Pipelines.FlatFileSend, VTech.EU.BizTalk.Generic.Pipelines, Version=1.0.0.0, Culture=neutral, PublicKeyToken=72082795706c4d47" Type="2" TrackingOption="ServiceStartEnd MessageSendReceive PipelineEvents" Description="" />
+      <SendPipelineData>&lt;Root xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;&lt;Stages&gt;&lt;Stage CategoryId="9d0e4101-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.DiscardMessage.DiscardMessageComponent"&gt;&lt;Properties&gt;&lt;DiscardMessage vt="11"&gt;-1&lt;/DiscardMessage&gt;&lt;XPathToCheck vt="8"&gt;//*[local-name()='WalvisSOConfirmations']&lt;/XPathToCheck&gt;&lt;/Properties&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4107-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="Microsoft.BizTalk.Component.FFAsmComp"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;Stage CategoryId="9d0e4108-4cce-4536-83fa-4a5040674ad6"&gt;&lt;Components&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.ConvertEncoding.ConvertEncodingComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;Component Name="VTech.EU.BizTalk.Generic.PC.SetFilenameMacro.SetFilenameMacroComponent"&gt;&lt;Properties /&gt;&lt;/Component&gt;&lt;/Components&gt;&lt;/Stage&gt;&lt;/Stages&gt;&lt;/Root&gt;</SendPipelineData>
+      <PrimaryTransport>
+        <Address>C:\BizTalkLocations\Walvis\Archive\OUT\08 SO Confirmation\%MessageID%.sor</Address>
+        <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        <TransportTypeData>&lt;CustomProps&gt;&lt;Username vt="8" /&gt;&lt;UseTempFileOnWrite vt="11"&gt;0&lt;/UseTempFileOnWrite&gt;&lt;AllowCacheOnWrite vt="11"&gt;0&lt;/AllowCacheOnWrite&gt;&lt;CopyMode vt="19"&gt;1&lt;/CopyMode&gt;&lt;Password vt="1" /&gt;&lt;FileName vt="8"&gt;%MessageID%.sor&lt;/FileName&gt;&lt;/CustomProps&gt;</TransportTypeData>
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>true</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler Name="BizTalkServerApplication" HostTrusted="false">
+          <TransportType Name="FILE" Capabilities="11" ConfigurationClsid="5e49e3a6-b4fc-4077-b44c-22f34a242fdb" />
+        </SendHandler>
+      </PrimaryTransport>
+      <SecondaryTransport>
+        <Address />
+        <RetryCount>3</RetryCount>
+        <RetryInterval>5</RetryInterval>
+        <ServiceWindowEnabled>false</ServiceWindowEnabled>
+        <FromTime>2000-01-01T23:00:00</FromTime>
+        <ToTime>2000-01-01T22:59:59</ToTime>
+        <Primary>false</Primary>
+        <OrderedDelivery>false</OrderedDelivery>
+        <DeliveryNotification>1</DeliveryNotification>
+        <SendHandler HostTrusted="false" />
+      </SecondaryTransport>
+      <ReceivePipelineData xsi:nil="true" />
+      <Tracking>0</Tracking>
+      <Filter>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+        &lt;Filter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+        &lt;Group&gt;
+        &lt;Statement Property="BTS.MessageType" Operator="0" Value="http://schemas.vtech.com/biztalk/CDM/Invoice/201506#InvoiceData" /&gt;
+        &lt;Statement Property="BTS.Operation" Operator="0" Value="ReceivedFromEBS" /&gt;
+        &lt;Statement Property="VTech.MetaData.SubMessageType" Operator="0" Value="SalesOrderConfirmation" /&gt;
+        &lt;Statement Property="VTech.MetaData.Source" Operator="0" Value="ERP" /&gt;
+        &lt;/Group&gt;
+        &lt;/Filter&gt;
+      </Filter>
+      <Transforms>
+        <Transform FullName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_EdiSoConfirmation" AssemblyQualifiedName="VTech.EU.BizTalk.Walvis.Maps.InvoiceCDM_x_EdiSoConfirmation,VTech.EU.BizTalk.Walvis.Maps, Version=1.0.0.0, Culture=neutral, PublicKeyToken=ac0d36bf7910deff" />
+      </Transforms>
+      <InboundTransforms />
+      <OrderedDelivery>false</OrderedDelivery>
+      <Priority>5</Priority>
+      <StopSendingOnFailure>false</StopSendingOnFailure>
+      <RouteFailedMessage>false</RouteFailedMessage>
+      <ApplicationName>VTech.EU.BizTalk.Walvis</ApplicationName>
+    </SendPort>
+  </SendPortCollection>
+</BindingInfo>

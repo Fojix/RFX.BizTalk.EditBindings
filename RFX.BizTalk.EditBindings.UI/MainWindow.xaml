@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Menu>
+            <MenuItem Header="File">
+                <MenuItem Header="Open"></MenuItem>
+                <Separator></Separator>
+                <MenuItem Header="Save"></MenuItem>
+            </MenuItem>
+            <TextBox x:Name="textBox" Height="216" TextWrapping="Wrap" Text="TextBox" Width="490"/>
+            <Button x:Name="button" Content="Button" Width="75" Click="button_Click"/>
+        </Menu>
     </Grid>
 </Window>
