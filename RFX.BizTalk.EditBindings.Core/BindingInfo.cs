@@ -28,14 +28,18 @@ namespace RFX.BizTalk.EditBindings.Core
         [XmlElement]
         public DateTime Timestamp { get; set; }
 
-        [XmlArray]
+        [XmlArray(IsNullable = true)]
         public List<ModuleRef> ModuleRefCollection { get; set; }
-        [XmlArray]
+        [XmlArray(IsNullable = true)]
         public List<SendPort> SendPortCollection { get; set; }
-        //[XmlArray]
-        //public List<> DistributionListCollection { get; set; }
-        //[XmlArray]
-        //public List<> ReceivePortCollection { get; set; }
+        [XmlArray(IsNullable = true)]
+        public List<DistributionList> DistributionListCollection { get; set; }
+        [XmlArray(IsNullable = true)]
+        public List<ReceivePort> ReceivePortCollection { get; set; }
+        
+        // TODO: Add Party and EDI part. Very much work, sprint 2 ;)
+        //[XmlArray(IsNullable = true)]
+        //public List<Party> PartyCollection { get; set; }
 
 
         public BindingInfo()

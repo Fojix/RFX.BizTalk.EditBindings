@@ -20,8 +20,12 @@ namespace RFX.BizTalk.EditBindings.Core
         [XmlAttribute]
         public bool IsTwoWay { get; set; }
 
+        private BindingType _bindingOption;
         [XmlAttribute]
-        public int BindingOption { get; set; }
+        public int BindingOption {
+            get { return (int) _bindingOption; }
+            set { _bindingOption = (BindingType) value; }
+        }
 
         [XmlElement(IsNullable = true)]
         public string Description { get; set; }
@@ -73,5 +77,10 @@ namespace RFX.BizTalk.EditBindings.Core
 
         [XmlElement]
         public string ApplicationName { get; set; }
+
+        public bool ShouldSerializeInboundTransforms()
+        {
+            return (InboundTransforms.Count > 0);
+        }
     }
 }

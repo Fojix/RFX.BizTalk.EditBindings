@@ -42,7 +42,7 @@ namespace RFX.BizTalk.EditBindings.Core
         [XmlElement]
         public int DeliveryNotification { get; set; }
 
-        [XmlElement]
+        [XmlElement(IsNullable = true)]
         public SendHandlerRef SendHandler { get; set; }
     }
 }

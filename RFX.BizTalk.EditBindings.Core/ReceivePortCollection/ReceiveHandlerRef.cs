@@ -8,9 +8,15 @@ using System.Xml.Serialization;
 
 namespace RFX.BizTalk.EditBindings.Core
 {
-    public class SendPortRef
+    public class ReceiveHandlerRef
     {
-        [XmlElement]
+        [XmlAttribute]
         public string Name { get; set; }
+
+        [XmlAttribute]
+        public bool HostTrusted { get; set; }
+
+        [XmlElement]
+        public ProtocolType TransportType { get; set; }
     }
 }

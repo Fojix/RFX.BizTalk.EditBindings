@@ -42,7 +42,13 @@
   <ItemGroup>
     <Compile Include="BindingFile.cs" />
     <Compile Include="BindingInfo.cs" />
-    <Compile Include="CertificateInfo.cs" />
+    <Compile Include="Party.cs" />
+    <Compile Include="ReceivePortCollection\DistributionList.cs" />
+    <Compile Include="Enums.cs" />
+    <Compile Include="ReceivePortCollection\ReceiveHandlerRef.cs" />
+    <Compile Include="ReceivePortCollection\ReceiveLocation.cs" />
+    <Compile Include="ReceivePortCollection\ReceivePort.cs" />
+    <Compile Include="Shared\CertificateInfo.cs" />
     <Compile Include="ModuleRefCollection\DistributionListRef.cs" />
     <Compile Include="ModuleRefCollection\EnlistedParty.cs" />
     <Compile Include="ModuleRefCollection\HostRef.cs" />
@@ -50,17 +56,17 @@
     <Compile Include="ModuleRefCollection\ModuleRef.cs" />
     <Compile Include="ModuleRefCollection\Schema.cs" />
     <Compile Include="ModuleRefCollection\ServicePortRef.cs" />
-    <Compile Include="PipelineRef.cs" />
+    <Compile Include="Shared\PipelineRef.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ModuleRefCollection\ReceivePortRef.cs" />
     <Compile Include="ModuleRefCollection\RoleRef.cs" />
-    <Compile Include="ModuleRefCollection\SendPortRef.cs" />
+    <Compile Include="Shared\SendPortRef.cs" />
     <Compile Include="ModuleRefCollection\Service.cs" />
-    <Compile Include="ProtocolType.cs" />
-    <Compile Include="SendHandlerRef.cs" />
-    <Compile Include="SendPort.cs" />
-    <Compile Include="Transform.cs" />
-    <Compile Include="TransportInfo.cs" />
+    <Compile Include="Shared\ProtocolType.cs" />
+    <Compile Include="SendPortCollection\SendHandlerRef.cs" />
+    <Compile Include="SendPortCollection\SendPort.cs" />
+    <Compile Include="Shared\Transform.cs" />
+    <Compile Include="SendPortCollection\TransportInfo.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

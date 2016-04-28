@@ -34,16 +34,17 @@ namespace RFX.BizTalk.EditBindings.UI
             XmlSerializer ser = new XmlSerializer(typeof(BindingInfo));
 
             using (
-                FileStream fs = new FileStream(@"C:\Projects\GIT\RFX.BizTalk.EditBindings\TempBindings - 02.xml",
+                FileStream fs = new FileStream(@"C:\Projects\GIT\RFX.BizTalk.EditBindings\TempBindings.xml",
                     FileMode.Open))
             {
                 BindingInfo bi = (BindingInfo) ser.Deserialize(fs);
-
+                
                 using (
                     FileStream fsOut = new FileStream(
-                        @"C:\Projects\GIT\RFX.BizTalk.EditBindings\TempBindings - OUT.xml", FileMode.CreateNew))
+                        @"C:\Projects\GIT\RFX.BizTalk.EditBindings\TempBindings - OUT - " + DateTime.Now.ToString("yyMMdd_HHmmss") + ".xml", FileMode.CreateNew))
                 {
-                    ser.Serialize(fsOut, bi);
+                    StreamWriter sw = new StreamWriter(fsOut, Encoding.UTF8);
+                    ser.Serialize(sw, bi);
                     fsOut.Flush();
                 }
 
