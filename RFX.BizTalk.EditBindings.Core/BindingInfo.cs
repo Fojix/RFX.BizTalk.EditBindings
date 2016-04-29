@@ -54,5 +54,7 @@ namespace RFX.BizTalk.EditBindings.Core
 
             Timestamp = DateTime.Now;
         }
+
+
     }
 }
