@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFX.BizTalk.EditBindings.UI
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFX.BizTalk.EditBindings.Core", "RFX.BizTalk.EditBindings.Core\RFX.BizTalk.EditBindings.Core.csproj", "{2E232BA9-CA01-4945-A9D6-5F042D9C0AA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RFX.BizTalk.EditBindings.Logic", "RFX.BizTalk.EditBindings.Logic\RFX.BizTalk.EditBindings.Logic.csproj", "{3C9356B7-F52E-47D8-A614-F9476E7E5BB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2E232BA9-CA01-4945-A9D6-5F042D9C0AA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E232BA9-CA01-4945-A9D6-5F042D9C0AA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E232BA9-CA01-4945-A9D6-5F042D9C0AA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C9356B7-F52E-47D8-A614-F9476E7E5BB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C9356B7-F52E-47D8-A614-F9476E7E5BB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C9356B7-F52E-47D8-A614-F9476E7E5BB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C9356B7-F52E-47D8-A614-F9476E7E5BB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

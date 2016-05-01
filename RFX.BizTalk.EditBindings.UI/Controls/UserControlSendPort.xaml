@@ -1,0 +1,184 @@
+﻿<UserControl x:Class="RFX.BizTalk.EditBindings.UI.Controls.UserControlSendPort"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:RFX.BizTalk.EditBindings.UI.Controls"
+             mc:Ignorable="d" 
+             d:DesignHeight="800" d:DesignWidth="1300" Margin="2">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid x:Name="GridTitleBar" Grid.Row="0" Background="#FF46525F">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="30"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <CheckBox x:Name="CheckBoxSelect" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"></CheckBox>
+            <Label x:Name="SendPortName" Grid.Column="1" FontSize="11" FontWeight="Bold"  Margin="3"  Foreground="White" HorizontalAlignment="Stretch">PlaceHolder.Test</Label>
+            <StackPanel Grid.Column="2" Margin="2" HorizontalAlignment="Right" Orientation="Horizontal" Background="SlateGray">
+                <Button Background="Transparent" BorderBrush="#FF46525F" Margin="2">
+                    <Image Source="..\Images\Long Arrow Up-White-64.png"></Image>
+                </Button>
+                <Button Background="Transparent" BorderBrush="#FF46525F" Margin="2">
+                    <Image Source="..\Images\Long Arrow Down-White-64.png"></Image>
+                </Button>
+
+                <Grid>
+                    <Image Source="..\Images\Expand Arrow-White-64.png"></Image>
+                    <Image Source="..\Images\Collapse Arrow-White-64.png"></Image>
+                </Grid>
+            </StackPanel>
+
+        </Grid>
+        <Grid Grid.Row="1" Background="#FFCAD6E4" Margin="5">
+            <StackPanel Margin="5">
+
+                <StackPanel Style="{StaticResource FormStackStyle}">
+                    <Label Content="Name" Style="{StaticResource FormLabelStyle}" />
+                    <RichTextBox x:Name="RtbName" Style="{StaticResource FormRichTextBoxStyle750}" LostFocus="RichTextBox_LostFocus">
+                        <FlowDocument LineHeight="1" />
+                    </RichTextBox>
+                    <CheckBox x:Name="CheckBoxIsTwoWay" Content="IsTwoWay" VerticalAlignment="Center" Margin="10,0,10,0" IsEnabled="False" />
+                    <CheckBox x:Name="CheckBoxIsStatic" Content="IsStatic" VerticalAlignment="Center" IsEnabled="False" />
+                </StackPanel>
+                <StackPanel Style="{StaticResource FormStackStyle}">
+                    <Label Content="Description" Style="{StaticResource FormLabelStyle}" />
+                    <RichTextBox x:Name="RtbDescription" Style="{StaticResource FormRichTextBoxStyle500}" MinHeight="100" MaxHeight="300" LostFocus="RichTextBox_LostFocus">
+                        <FlowDocument LineHeight="1" />
+                    </RichTextBox>
+                </StackPanel>
+                <StackPanel Style="{StaticResource FormStackStyle}">
+                    <Label Content="SendPipelineData" Style="{StaticResource FormLabelStyle}" />
+                    <RichTextBox x:Name="RtbSendPipelineData" Style="{StaticResource FormRichTextBoxStyle500}" MinHeight="100" MaxHeight="300" LostFocus="RichTextBox_LostFocus">
+                        <FlowDocument LineHeight="1">
+                        </FlowDocument>
+                    </RichTextBox>
+                </StackPanel>
+
+
+                <Grid Margin="0,10,0,0" x:Name="GridTransports">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="635"></ColumnDefinition>
+                        <ColumnDefinition Width="635"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid Margin="5" Grid.Column="0" Background="#3346525F">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Primary Transport" Grid.Row="0" FontWeight="Bold" Margin="2" Foreground="White" Background="#FF46525F" />
+                        <StackPanel Grid.Row="1" Margin="0,0,0,5">
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="Address" Style="{StaticResource FormLabelStyle}" />
+                                <RichTextBox x:Name="RtbPrimaryAddress" Style="{StaticResource FormRichTextBoxStyle500}" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="TransportType" Style="{StaticResource FormLabelStyle}" />
+                                <RichTextBox x:Name="RtbPrimaryTransportType" Style="{StaticResource FormRichTextBoxStyle500}" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="TransportTypeData" Style="{StaticResource FormLabelStyle}" />
+                                <RichTextBox x:Name="RtbPrimaryTransmitData" Style="{StaticResource FormRichTextBoxStyle500}" MinHeight="100" MaxHeight="500" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="RetryCount" Style="{StaticResource FormLabelStyle}" />
+                                <RichTextBox x:Name="RtbPrimaryRetryCount" Style="{StaticResource FormRichTextBoxStyle50}" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="Retry Interval" Style="{StaticResource FormLabelStyle}" />
+
+                                <RichTextBox x:Name="RtbPrimaryRetryInterval" Style="{StaticResource FormRichTextBoxStyle50}" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+
+
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Style="{StaticResource FormLabelStyle}" Content="Service Window" />
+
+                                <StackPanel>
+                                    <StackPanel Style="{StaticResource FormStackStyle}">
+                                        <Label Content="Enabled" Style="{StaticResource FormLabelStyle}" Width="60" Margin="0" />
+
+
+                                        <RichTextBox x:Name="RtbPrimaryServiceWindowEnabled" Style="{StaticResource FormRichTextBoxStyle100}" LostFocus="RichTextBox_LostFocus">
+                                            <FlowDocument LineHeight="1">
+                                            </FlowDocument>
+                                        </RichTextBox>
+                                    </StackPanel>
+
+
+                                    <StackPanel Style="{StaticResource FormStackStyle}">
+                                        <Label Content="From" Style="{StaticResource FormLabelStyle}" Width="60" Margin="0" />
+                                        <RichTextBox x:Name="RtbPrimaryServiceWindowFrom" Style="{StaticResource FormRichTextBoxStyle100}" LostFocus="RichTextBox_LostFocus">
+                                            <FlowDocument LineHeight="1">
+                                            </FlowDocument>
+                                        </RichTextBox>
+                                    </StackPanel>
+
+                                    <StackPanel Style="{StaticResource FormStackStyle}">
+                                        <Label Content="To" Style="{StaticResource FormLabelStyle}" Width="60" Margin="0" />
+                                        <RichTextBox x:Name="RtbPrimaryServiceWindowTo" Style="{StaticResource FormRichTextBoxStyle100}" LostFocus="RichTextBox_LostFocus">
+                                            <FlowDocument LineHeight="1">
+                                            </FlowDocument>
+                                        </RichTextBox>
+                                    </StackPanel>
+                                </StackPanel>
+                            </StackPanel>
+                        </StackPanel>
+
+
+
+                    </Grid>
+
+                    <Grid Margin="5" Grid.Column="1" Background="#3346525F">
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="30"></RowDefinition>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Label Content="Secondary Transport" FontWeight="Bold" Grid.Row="0" Margin="2" Foreground="White" Background="#FF46525F" />
+                        <StackPanel Grid.Row="1">
+                            <StackPanel Style="{StaticResource FormStackStyle}">
+                                <Label Content="Uri" Style="{StaticResource FormLabelStyle}" />
+                                <RichTextBox x:Name="RtbSecondaryUri" Style="{StaticResource FormRichTextBoxStyle500}" LostFocus="RichTextBox_LostFocus">
+                                    <FlowDocument LineHeight="1">
+                                    </FlowDocument>
+                                </RichTextBox>
+                            </StackPanel>
+
+                        </StackPanel>
+                    </Grid>
+
+                </Grid>
+
+
+
+            </StackPanel>
+        </Grid>
+
+
+
+    </Grid>
+</UserControl>

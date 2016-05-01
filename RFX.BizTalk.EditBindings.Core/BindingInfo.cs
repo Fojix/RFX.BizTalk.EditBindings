@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -40,8 +41,9 @@ namespace RFX.BizTalk.EditBindings.Core
         // TODO: Add Party and EDI part. Very much work, sprint 2 ;)
         //[XmlArray(IsNullable = true)]
         //public List<Party> PartyCollection { get; set; }
-
-
+        [XmlAnyElement]
+        public object PartyCollection { get; set; }
+        
         public BindingInfo()
         {
             Assembly = "Microsoft.BizTalk.Deployment, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35";

@@ -4,6 +4,54 @@
              xmlns:local="clr-namespace:RFX.BizTalk.EditBindings.UI"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Fluent theme-->
+                <ResourceDictionary Source="pack://application:,,,/Fluent;Component/Themes/Office2013/Generic.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+            <Style x:Key="FormStackStyle" TargetType="StackPanel">
+                <Setter Property="Margin" Value="2" />
+                <Setter Property="Orientation" Value="Horizontal" />
+            </Style>
+            <Style x:Key="FormLabelStyle" TargetType="Label">
+                <Setter Property="Width" Value="120" />
+            </Style>
+            <Style x:Key="FormTextBoxStyle50" TargetType="TextBox">
+                <Setter Property="Width" Value="400" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+            </Style>
+            <Style x:Key="FormTextBoxStyle100" TargetType="TextBox">
+                <Setter Property="Width" Value="800" />
+                <Setter Property="VerticalContentAlignment" Value="Center" />
+                <Setter Property="HorizontalAlignment" Value="Left" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle" TargetType="RichTextBox">
+                <Setter Property="HorizontalAlignment" Value="Left" />
+                <Setter Property="VerticalScrollBarVisibility" Value="Auto" />
+                <Setter Property="HorizontalScrollBarVisibility" Value="Auto" />
+                <Setter Property="Padding" Value="3" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle50" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="50" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle100" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="100" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle200" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="200" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle750" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="750" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle500" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="500" />
+            </Style>
+            <Style x:Key="FormRichTextBoxStyle1000" TargetType="RichTextBox" BasedOn="{StaticResource FormRichTextBoxStyle}">
+                <Setter Property="Width" Value="1000" />
+            </Style>
+            
+        </ResourceDictionary>
+        
     </Application.Resources>
 </Application>

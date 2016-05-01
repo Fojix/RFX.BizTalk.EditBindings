@@ -1,20 +1,131 @@
-﻿<Window x:Class="RFX.BizTalk.EditBindings.UI.MainWindow"
+﻿<fluent:RibbonWindow x:Class="RFX.BizTalk.EditBindings.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:RFX.BizTalk.EditBindings.UI"
+        xmlns:fluent="clr-namespace:Fluent;assembly=Fluent"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="BizTalk Binding Toolbox" Height="700" Width="1000" WindowStartupLocation="CenterScreen">
     <Grid>
-        <Menu>
+
+
+        <!--<Menu Grid.Row="0">
             <MenuItem Header="File">
                 <MenuItem Header="Open"></MenuItem>
                 <Separator></Separator>
                 <MenuItem Header="Save"></MenuItem>
             </MenuItem>
-            <TextBox x:Name="textBox" Height="216" TextWrapping="Wrap" Text="TextBox" Width="490"/>
-            <Button x:Name="button" Content="Button" Width="75" Click="button_Click"/>
-        </Menu>
+        </Menu>-->
+
+        <!--<StackPanel Orientation="Horizontal" Grid.Row="1">
+            
+            <Grid Width="40" Height="50" Margin="5">
+                
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Label Grid.Row="0" FontFamily="Segoe MDL2 Assets" FontSize="24" HorizontalAlignment="Center" Margin="0,0,0,0"></Label>
+                <Label Grid.Row="1" FontFamily="Segoe UI" FontSize="9" HorizontalAlignment="Center" Margin="0,-12,0,0">Open</Label>
+                
+            </Grid>
+            
+            
+        </StackPanel>-->
+        <DockPanel>
+        <fluent:Ribbon DockPanel.Dock="Top">
+            <!--Backstage-->
+            <!--<fluent:Ribbon.Menu>
+                <fluent:Backstage>
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                    <fluent:RibbonGroupBox Header="Group">
+                        <fluent:Button Name="BtnOpen1" Header="Open"
+                           Icon="Images\Open Folder-64 (2).png"
+                           LargeIcon="Images\Open Folder-64 (2).png" />
+                        <fluent:Button Name="ButtonGray2" Header="Save" Icon="Images\Gray.png"
+                           LargeIcon="Images\GrayLarge.png" />
+                    </fluent:RibbonGroupBox>
+                    </Grid>
+                </fluent:Backstage>
+            </fluent:Ribbon.Menu>-->
+            <!--Tabs-->
+            <fluent:RibbonTabItem Header="File">
+                <fluent:RibbonGroupBox Header="Group">
+                    <fluent:Button Name="BtnOpen" Header="Open"
+                           Icon="Images\Open Folder-64.png"
+                           LargeIcon="Images\Open Folder-64.png" Click="BtnOpen_OnClick" />
+                    <fluent:Button Name="BtnSave" Header="Save" Icon="Images\Save-64.png"
+                           LargeIcon="Images\Save-64.png" Click="BtnSave_Click" IsEnabled="False"  />
+                </fluent:RibbonGroupBox>
+                <fluent:RibbonGroupBox>
+                    <fluent:Button Name="BtnSaveAs" Header="Save as" Icon="Images\Save as-64.png"
+                           LargeIcon="Images\Save as-64.png" Click="BtnSaveAs_Click" IsEnabled="False" />
+                </fluent:RibbonGroupBox>
+            </fluent:RibbonTabItem>
+            <fluent:RibbonTabItem Header="Edit">
+                <fluent:RibbonGroupBox>
+                    <fluent:Button Name="BtnCopy" Header="Copy"
+                           Icon="Images\Copy-64.png"
+                           LargeIcon="Images\Copy-64.png" />
+                    <fluent:Button Name="BtnPaste" Header="Paste" Icon="Images\Paste-64.png"
+                           LargeIcon="Images\Paste-64.png" />
+                </fluent:RibbonGroupBox>
+                <fluent:RibbonGroupBox Header="Sorting">
+                    <fluent:Button Name="BtnSortAz" Header="Sort A-Z"
+                           Icon="Images\Alphabetical Sorting-64.png"
+                           LargeIcon="Images\Alphabetical Sorting-64.png" Click="BtnSortAz_OnClick" IsEnabled="False" />
+                    <fluent:Button Name="BtnSortZa" Header="Sort Z-A" Icon="Images\Alphabetical Sorting 2-64.png"
+                           LargeIcon="Images\Alphabetical Sorting 2-64.png" IsEnabled="False" />
+                </fluent:RibbonGroupBox>
+            </fluent:RibbonTabItem>
+            <fluent:RibbonTabItem Header="Help">
+                <fluent:RibbonGroupBox>
+                    <fluent:Button Name="BtnHelp" Header="Help"
+                           Icon="Images\Help-64.png"
+                           LargeIcon="Images\Copy-64.png" />
+                </fluent:RibbonGroupBox>
+                <fluent:RibbonGroupBox>
+                    <fluent:Button Name="BtnAbout" Header="About"
+                           Icon="Images\Wolf-64.png"
+                           LargeIcon="Images\Wolf-64.png" />
+                </fluent:RibbonGroupBox>
+            </fluent:RibbonTabItem>
+        </fluent:Ribbon>
+
+            <StackPanel x:Name="PanelNothingToSeeHere" Margin="50" DockPanel.Dock="Top">
+                <Image Source="Images\Wolf-64.png" Width="50" VerticalAlignment="Center" />
+                <Label FontFamily="Calibri" FontWeight="Bold" FontSize="14" HorizontalAlignment="Center" Content="OPEN A BINDING FILE" />
+                <TextBlock FontFamily="Calibri" FontSize="12" HorizontalAlignment="Center">
+                    after opening your binding file, something should show up here
+                </TextBlock>
+            </StackPanel>
+
+            <TabControl x:Name="TabControlBindings" Margin="5" Visibility="Collapsed" DockPanel.Dock="Bottom" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                <TabItem Header="ModuleRef"></TabItem>
+                <TabItem Header="SendPorts">
+                    <ScrollViewer>
+                        <StackPanel x:Name="StackPanelSendPorts" CanVerticallyScroll="True">
+
+                        </StackPanel>
+                    </ScrollViewer>
+                </TabItem>
+                <TabItem Header="ReceivePorts"></TabItem>
+            </TabControl>
+
+        </DockPanel>
+
+        <!--<TabControl Grid.Row="1">
+            <TabItem Header="ModuleRef"></TabItem>
+            <TabItem Header="SendPorts"></TabItem>
+            <TabItem Header="ReceivePorts"></TabItem>
+        </TabControl>-->
+
+
+
+
+
+
     </Grid>
-</Window>
+</fluent:RibbonWindow>
+
